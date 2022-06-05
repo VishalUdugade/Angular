@@ -1,0 +1,29 @@
+<p>property-binding works!</p>
+
+<html>
+<!--Text box with attribute-->
+<input type="text" value="PropertyBinding">
+<br>
+
+<!--Hardcoded attribute-->
+<input type="text" id="1" value="PropertyBinding">
+<br>
+
+<!-- Text box with attribute and property binding-->
+<input type="text" [id]="PropertyBindingID" value="PropertyBinding">
+<br>
+
+<!-- Property binding as string interpolation-->
+<!-- String interpolation only works with string attributes-->
+<input type="text" id="{{PropertyBindingID}}" value = "PropertyBinding">
+
+<!--Text box with disabled attribute -->
+<input type="text" disabled="true" value="PropertyBinding">
+
+<!--Text box with disabled attribute with property binding-->
+<input type="text" [disabled] = "IsSet" value="PropertyBinding">
+
+<!-- using bind- tag we can also set the property-->
+<input type="text" bind-id="PropertyBindingID" value="PropertyBinding">
+<br>
+</html>

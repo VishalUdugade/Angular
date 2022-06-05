@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced-->
+<div style="text-align:center">
+    <h1>
+        Angular Child to parent Communication 
+    </h1>
+    <!--
+        Bind the event with the container
+    -->
+
+    <app-child-to-parent-communication (MyEvent)="Message= $event"></app-child-to-parent-communication>
+
+    <!--display the message received from child-->
+    <h2>{{Message}}</h2>
+</div>
